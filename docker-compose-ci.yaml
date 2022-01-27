@@ -1,6 +1,6 @@
-version: "3.9"
+version: "3.3"
 services:
   api:
     image: samischikhin/flask-app:$GITHUB_REF_NAME-$GITHUB_RUN_ID
     ports:
-    - 8000:80
+    - 80:80
