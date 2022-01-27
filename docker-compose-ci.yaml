@@ -5,4 +5,4 @@ services:
     ports:
     - 8000:80
     volumes:
-      - ./data/apache_logs.txt:/code/data/apache_logs.txt:ro
+      - ./data/apache_logs.txt:/code/data/apache_logs.txt
