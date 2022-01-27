@@ -4,3 +4,5 @@ services:
     image: samischikhin/flask-app:$GITHUB_REF_NAME-$GITHUB_RUN_ID
     ports:
     - 80:80
+    volumes:
+      - ./data/apache_logs.txt:/code/data/apache_logs.txt
