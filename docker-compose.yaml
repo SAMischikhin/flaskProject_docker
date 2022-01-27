@@ -13,12 +13,10 @@ chmod +x /usr/local/bin/docker-compose
 ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 ```
-version: "3.3"
+version: "3.9"
 services:
   api:
     build:
       context: .
     ports:
-    - 8000:80
-    volumes:
-      - ./data/apache_logs.txt:/code/data/apache_logs.txt
+    - 80:80

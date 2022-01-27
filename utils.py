@@ -18,6 +18,7 @@ class UserSchema(Schema):
 
 def get_path(file_name: str) -> Union[str, BadRequest]:
     file_path = os.path.join(DATA_DIR, file_name)
+    print(file_path)
     if not os.path.exists(file_path):
         return BadRequest(description=f'{file_path} is not exist')
     else:
